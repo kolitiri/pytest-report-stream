@@ -33,7 +33,7 @@ The plugin produces report events at specific moments:
 
 The report structure looks like the dictionary below:
 
-.. code-block:: sh
+.. code-block:: python3
 
     {
         "test_run_tag": "My first test framework",
