@@ -15,9 +15,9 @@ setup(
     name='pytest-report-stream',
     version='0.1.0',
     author='Christos Liontos',
-    author_email='clion2206@gmail.com',
+    author_email='christos.liontos.pr@gmail.com',
     maintainer='Christos Liontos',
-    maintainer_email='clion2206@gmail.com',
+    maintainer_email='christos.liontos.pr@gmail.com',
     license='MIT',
     url='https://github.com/kolitiri/pytest-report-stream',
     description='''
