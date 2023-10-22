@@ -15,7 +15,7 @@ pytest-report-stream - Live stream test reports
 :Version: 0.1.0
 :Date:    2023-09-22
 :Download: https://pypi.python.org/pypi/pytest-report-stream#downloads
-:Code: https://github.com/pytest-dev/pytest-twisted
+:Code: https://github.com/kolitiri/pytest-report-stream
 
 
 Welcome to pytest-report-stream!
@@ -31,7 +31,7 @@ The plugin produces report events at specific moments:
 
 The report structure looks like the dictionary below:
 
-.. code-block:: json
+.. code-block:: sh
     {
         "test_run_tag": "My first test framework",
         "test_run_id": "5e080accaee748dc80619ee99245124e",
@@ -92,7 +92,7 @@ The default client can be overriden in your own ``pytest_configure`` with an imp
 Synchronous test using the default STDOUT report client
 ------------------------------------------------------------
 
-.. code-block:: python
+.. code-block:: python3
     # content of tests/test_my_module.py
     def test_sync():
         pass
@@ -100,7 +100,7 @@ Synchronous test using the default STDOUT report client
 Aynchronous test using the default STDOUT report client
 ------------------------------------------------------------
 
-.. code-block:: python
+.. code-block:: python3
     # content of tests/test_my_module.py
     import pytest
 
@@ -111,7 +111,7 @@ Aynchronous test using the default STDOUT report client
 Aynchronous test using a custom report client
 ------------------------------------------------------------
 
-.. code-block:: python
+.. code-block:: python3
     # content of tests/conftest.py
     import pytest
     from pytest_report_stream import ReportClient, ReportStreamPlugin
@@ -129,7 +129,7 @@ Aynchronous test using a custom report client
             )
             config.pluginmanager.register(config._stream_reports)
 
-.. code-block:: python
+.. code-block:: python3
     # content of tests/test_my_module.py
     import pytest
 
