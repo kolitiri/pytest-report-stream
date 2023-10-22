@@ -34,6 +34,7 @@ The plugin produces report events at specific moments:
 The report structure looks like the dictionary below:
 
 .. code-block:: sh
+
     {
         "test_run_tag": "My first test framework",
         "test_run_id": "5e080accaee748dc80619ee99245124e",
@@ -75,6 +76,7 @@ Installation
 Install the plugin as below.
 
 .. code-block:: sh
+
     pip install pytest-report-stream
 
 
@@ -83,6 +85,7 @@ Usage
 The plugin is available after installation and can be enabled using the ``--stream-reports`` flag.
 
 .. code-block:: sh
+
     pytest --stream-reports
 
 The plugin is using a ``report_client: ReportClient`` instance to generate the reports.
@@ -95,6 +98,7 @@ Synchronous test using the default STDOUT report client
 ------------------------------------------------------------
 
 .. code-block:: python3
+
     # content of tests/test_my_module.py
     def test_sync():
         pass
@@ -103,6 +107,7 @@ Aynchronous test using the default STDOUT report client
 ------------------------------------------------------------
 
 .. code-block:: python3
+
     # content of tests/test_my_module.py
     import pytest
 
@@ -114,6 +119,7 @@ Aynchronous test using a custom report client
 ------------------------------------------------------------
 
 .. code-block:: python3
+
     # content of tests/conftest.py
     import pytest
     from pytest_report_stream import ReportClient, ReportStreamPlugin
@@ -132,6 +138,7 @@ Aynchronous test using a custom report client
             config.pluginmanager.register(config._stream_reports)
 
 .. code-block:: python3
+
     # content of tests/test_my_module.py
     import pytest
 
@@ -156,6 +163,7 @@ Tests can be run with `tox <https://tox.wiki/en>`_, please ensure
 the coverage at least stays the same before you submit a pull request.
 
 .. code-block:: sh
+
     tox
 
 
