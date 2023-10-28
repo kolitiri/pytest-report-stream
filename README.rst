@@ -12,9 +12,9 @@ pytest-report-stream - Live stream test reports
     :target: https://pypi.org/project/pytest-report-stream
     :alt: Python versions
 
-.. image:: https://github.com/kolitiri/pytest-report-stream/workflows/test.yml/badge.svg
+.. image:: https://github.com/kolitiri/pytest-report-stream/workflows/test/badge.svg
     :target: https://github.com/kolitiri/pytest-report-stream/actions
-    :alt: Tox tests
+    :alt: tests
 
 :Authors: Christos Liontos
 :Version: 0.1.0
